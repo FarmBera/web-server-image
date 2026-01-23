@@ -1,7 +1,9 @@
 .idea
-img
-img-tmp
-node_modules
+/db/private
+/img
+/img-tmp
+/node_modules
+/script
 
 .env
 TOKEN.js
