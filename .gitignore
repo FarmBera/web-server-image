@@ -1,0 +1,9 @@
+.idea
+img
+img-tmp
+node_modules
+
+.env
+TOKEN.js
+
+.DS_Store
