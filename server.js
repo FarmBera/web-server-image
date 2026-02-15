@@ -80,9 +80,8 @@ app.get('/', async (req, res) => {
                     const msg = 'File Transfer Error'
                     res.status(500).send(msg);
                 }
-            } else {
-                console.log(`[ACCESS] ${req.ip} -> ${matchedFile}`);
             }
+            // else console.log(`[ACCESS] ${req.ip} -> ${matchedFile}`);
         });
     });
 });
