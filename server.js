@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
+const {inject} = require("@vercel/analytics");
 
 
 const app = express();
@@ -27,6 +28,7 @@ const ALLOWED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp'];
 // }
 
 app.get('/', async (req, res) => {
+    inject();
     const requestName = req.query.name;
 
     // verify args
