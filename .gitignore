@@ -1,6 +1,6 @@
 .idea
 /db/private
-/img
+#/img
 /img-tmp
 /node_modules
 /script
