@@ -90,3 +90,5 @@ app.get('/', async (req, res) => {
 app.listen(port, () => {
     console.log(`[INFO] Server Started! http://localhost:${port}`);
 });
+
+module.exports = app;
